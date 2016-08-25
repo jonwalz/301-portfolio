@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../img/code.jpeg');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    font-family: 'Baloo Paaji', cursive;
+}
+
+aside {
+    color: white;
+    display: inline-block;
+    width: 30%;
+}
+.aside-wrapper {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+aside nav {
+    height: 90%;
+    background-color: #030328;
+    width: 100%;
+    margin-left: 10px;
+    border-radius: 5px;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+aside nav ul {
+    padding-left: 0;
+}
+
+aside nav ul li {
+    display: block;
+    align-self: center;
+    font-size: 24px;
+}
