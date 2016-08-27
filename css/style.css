@@ -14,7 +14,10 @@ body {
     align-items: stretch;
     justify-content: space-between;
 }
-
+a {
+    color: #D8CD03;
+    text-decoration: none;
+}
 #icon {
     color: white;
     position: fixed;
@@ -57,10 +60,7 @@ aside nav ul li {
     align-self: center;
     font-size: 24px;
 }
-aside a {
-    color: #D8CD03;
-    text-decoration: none;
-}
+
 
 section {
     font-family: 'Open Sans', sans-serif;
@@ -69,13 +69,18 @@ section {
     color: #C3D4EB;
     display: flex;
     width: 100%;
-    align-self: center;
+    align-self: flex-start;
     flex-grow: 1;
     padding: 50px;
     border-radius: 10px;
     margin: 0 10px;
     align-items: center;
     background-color: rgba(30,30,30, 0.7);
+}
+section:nth-of-type(1n) {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
 }
 #imageContainer img {
     max-height: 400px;
