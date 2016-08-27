@@ -18,6 +18,9 @@ a {
     color: #D8CD03;
     text-decoration: none;
 }
+.template {
+    display: none;
+}
 #icon {
     color: white;
     position: fixed;
