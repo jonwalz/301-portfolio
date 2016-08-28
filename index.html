@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Portfolio</title>
     <link rel="stylesheet" href="vendor/normalize.css">
+    <script src="https://use.fontawesome.com/e0f09b9cc9.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji|Open+Sans:300,400" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
@@ -12,17 +13,41 @@
 <!-- -->
 <div id="icon">Jon Walz</div>
 <aside>
-    <div class="aside-wrapper">
-        <nav>
+    <div class="aside-wrapper active">
+        <nav class="main-nav">
             <ul>
                 <li><a href="">About</a></li>
                 <li><a href="">Work</a></li>
                 <li><a href="">Contact</a></li>
+                <ul id="socialIcons">
+                    <li><a href="" title="Github"><i class="fa fa-github-square" aria-hidden="true"></a></i></li>
+                    <li><a href="" title="LinkedIn"><i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    </a></li>
+                </ul>
             </ul>
+
             <!-- Vertical Navbar -->
             <!-- Sidebar style -->
         </nav>
     </div>
+
+    <!-- nav page -->
+
+    <div class="aside-wrapper no-display">
+        <nav class="main-nav">
+
+        </nav>
+    </div>
+
+    <!-- nav page -->
+
+    <div class="aside-wrapper no-display">
+
+        <nav class="main-nav">
+
+        </nav>
+    </div>
+
 </aside>
 <section>
     <div id="templateDiv" class="template">
@@ -51,5 +76,6 @@
         crossorigin="anonymous"></script>
 <script src="js/portfolioData.js"></script>
 <script src="js/main.js"></script>
+<script src="js/portfolioView.js"></script>
 </body>
 </html>

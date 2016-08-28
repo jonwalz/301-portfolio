@@ -1,9 +1,10 @@
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body {
   height: 100vh;
-  background-image: url("../img/code.jpeg");
+  background-image: url('../img/code.jpeg');
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
@@ -11,42 +12,42 @@ body {
   font-family: 'Baloo Paaji', cursive;
   display: flex;
   align-items: stretch;
-  justify-content: space-between; }
-
+  justify-content: space-between;
+}
 a {
   color: #D8CD03;
-  text-decoration: none; }
-
+  text-decoration: none;
+}
 .template {
-  display: none; }
-
+  display: none;
+}
 #icon {
   color: white;
   position: fixed;
   top: 20px;
   right: 30px;
-  font-size: 40px; }
-
+  font-size: 40px;
+}
 aside {
   /*position: fixed;*/
   color: white;
   display: inline-block;
-  min-width: 30%; }
-
+  min-width: 30%;
+}
 .aside-wrapper {
   position: fixed;
   width: 30%;
   display: flex;
   height: 100vh;
   align-items: center;
-  justify-content: center; }
-
+  justify-content: center;
+}
 .no-display {
-  display: none; }
-
+  display: none;
+}
 aside nav {
   height: 90%;
-  background-color: rgba(19, 43, 76, 0.97);
+  background-color: rgba(19,43,76, 0.97);
   width: 100%;
   margin-left: 10px;
   border-radius: 10px;
@@ -54,19 +55,23 @@ aside nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; }
-  aside nav ul {
+  justify-content: center;
+  ul {
     padding-left: 0;
-    display: block; }
-    aside nav ul li {
+    display: block;
+    li {
       display: block;
       align-self: center;
       font-size: 24px;
-      padding: 0 20px; }
+      padding: 0 20px;
+    }
+  }
+}
 
 #socialIcons {
   list-style-type: none;
-  display: flex; }
+  display: flex;
+}
 
 section {
   font-family: 'Open Sans', sans-serif;
@@ -81,16 +86,18 @@ section {
   border-radius: 10px;
   margin: 0 10px;
   align-items: center;
-  background-color: rgba(30, 30, 30, 0.7); }
-  section:nth-of-type(1n) {
+  background-color: rgba(30,30,30, 0.7);
+  &:nth-of-type(1n) {
     margin-top: 5vh;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+  }
+}
 
 #imageContainer img {
-  max-height: 400px; }
+  max-height: 400px;
+}
 
 #portfolioPieces {
-  display: inline-block; }
-
-/*# sourceMappingURL=style.css.map */
+  display: inline-block;
+}
