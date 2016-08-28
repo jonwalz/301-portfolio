@@ -15,6 +15,7 @@ Piece.prototype.postIt = function(){
 
     $newPiece.find(".pieceTitle").html(this.title);
     $newPiece.find(".description p").html(this.description);
+    $newPiece.find(".dateTime").html(this.date);
     $newPiece.append('<hr>');
 
     $newPiece.removeClass('template');
