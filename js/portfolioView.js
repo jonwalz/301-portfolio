@@ -5,15 +5,22 @@ portfolioView.populateSelectors = function () {
 };
 
 portfolioView.navViews = function() {
-    $('.aside-wrapper').on('click', function(e){
+    $('.main-nav').on('click', function(e){
         e.preventDefault();
-        var target = $(e.target);
-        if(target.is(".no-display")) {
-            console.log('passed');
-            target.removeClass('.no-display');
 
-            target.parent().children().not(target).addClass('.noDisplay');
+        // change display of nav bar
+        if(e.target.textContent == "About") {
+            $('.active')
+                .fadeOut('slow')
+                .addClass('no-display')
+                .next()
+                .removeClass('no-display')
+                .fadeIn('slow');
+
+            // change display of content
+            $('')
         }
+
     })
 };
 $(document).ready(function(){

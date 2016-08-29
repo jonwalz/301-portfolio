@@ -11,7 +11,7 @@ function Piece(keys) {
 }
 
 Piece.prototype.postIt = function(){
-    var $newPiece = $('#templateDiv').clone(); //this creates a clone to save all styling and formatting
+    var $newPiece = $('.templateDiv').clone(); //this creates a clone to save all styling and formatting
 
     $newPiece.find(".pieceTitle").html(this.title);
     $newPiece.find('#sectionWrapper a').find('');
@@ -19,7 +19,7 @@ Piece.prototype.postIt = function(){
     $newPiece.find(".dateTime").html(this.date);
     $newPiece.append('<hr>');
 
-    $newPiece.removeClass('template');
+    $newPiece.removeClass('template templateDiv');
 
     return $newPiece;
 };
@@ -29,6 +29,6 @@ portfolioPieces.forEach(function(el){
 });
 
 portfolioBlocks.forEach(function(p){
-   $("#templateDiv").parent().append(p.postIt());
+   $(".templateDiv").parent().append(p.postIt());
 });
 
