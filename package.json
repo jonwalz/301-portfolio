@@ -1,0 +1,19 @@
+{
+  "name": "301-portfolio",
+  "version": "1.0.0",
+  "description": "A portfolio page assignment for Code Fellows 301 course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonwalz/301-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonwalz/301-portfolio/issues"
+  },
+  "homepage": "https://github.com/jonwalz/301-portfolio#readme"
+}
