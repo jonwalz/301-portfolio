@@ -9,17 +9,17 @@ portfolioView.navViews = function() {
     $('.main-nav').on('click', function(e){
         e.preventDefault();
 
-        $('section')
+        $('section div')
             .not(this)
             .fadeOut(500);
         console.log(this);
         $(this).fadeIn(500);
 
-
         // change display of nav bar
         if(e.target.textContent == "About") {
-
+            $('#aboutMe').fadeIn(500);
             // change display of content
+
 
         } else if (e.target.textContent == "Work") {
 
