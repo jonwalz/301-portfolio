@@ -20,7 +20,6 @@ portfolioView.navViews = function() {
             $('#aboutMe').fadeIn(500);
             // change display of content
 
-
         } else if (e.target.textContent == "Work") {
 
         }
