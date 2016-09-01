@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/jonwalz/301-portfolio/issues"
   },
-  "homepage": "https://github.com/jonwalz/301-portfolio#readme"
+  "homepage": "https://github.com/jonwalz/301-portfolio#readme",
+  "devDependencies": {
+    "browser-sync": "^2.14.3",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-image": "^2.6.0",
+    "gulp-sass": "^2.3.2"
+  }
 }
