@@ -3,6 +3,8 @@ var cleanCSS = require('gulp-clean-css');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 var image = require('gulp-image');
+var uglify = require('gulp-uglify');
+var pump = require('pump');
 
 gulp.task('sass', function () {
     return gulp.src('./dev/css/*.scss')
@@ -21,6 +23,16 @@ gulp.task('index', function () {
 gulp.task('js', function () {
    return gulp.src('./dev/js/*.js')
        .pipe(gulp.dest('./dist/js'));
+});
+
+gulp.task('compress', function (cb) {
+    pump([
+            gulp.src('./dev/js/*.js'),
+            uglify(),
+            gulp.dest('./dist/js')
+        ],
+        cb
+    );
 });
 
 gulp.task('bower', function () {

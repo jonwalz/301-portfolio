@@ -18,7 +18,7 @@ portfolioView.navViews = function() {
         } else if (e.target.textContent == "Work") {
             $('section div')
                 .fadeOut(300)
-                .not('#aboutMe, #contact')
+                .not('#aboutMe, #contact', ".template")
                 .fadeIn(300);
         } else if (e.target.textContent == "Contact") {
             $('section div')
