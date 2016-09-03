@@ -23,13 +23,22 @@ gulp.task('js', function () {
        .pipe(gulp.dest('./dist/js'));
 });
 
+gulp.task('bower', function () {
+   return gulp.src(
+       [
+           './bower_components/Flowtype.js/flowtype.js',
+           './bower_components/jquery/dist/jquery.min.js'
+       ])
+       .pipe(gulp.dest('./dist/vendor/'))
+});
+
 gulp.task('images', function () {
    return gulp.src('./dev/img/*')
        .pipe(image())
        .pipe(gulp.dest('./dist/img'));
 });
 
-gulp.task('default', ['sass', 'images', 'index'], function() {
+gulp.task('default', ['sass', 'images'], function() {
     return gulp.src('./dev/css/*.css');
 });
 

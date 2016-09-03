@@ -17,7 +17,7 @@ Piece.prototype.postIt = function(){
     $newPiece.find('#sectionWrapper a').find('');
     $newPiece.find(".description p").html(this.description);
     $newPiece.find(".dateTime").html(this.date);
-    $newPiece.append('<hr>');
+
 
     $newPiece.removeClass('template templateDiv');
 
