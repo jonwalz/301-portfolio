@@ -1,14 +1,19 @@
 var gulp = require('gulp');
 var cleanCSS = require('gulp-clean-css');
 var sass = require('gulp-sass');
+var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-sync').create();
 var image = require('gulp-image');
 var uglify = require('gulp-uglify');
 var pump = require('pump');
 
+
 gulp.task('sass', function () {
     return gulp.src('./dev/css/*.scss')
+        .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
+        .pipe(sourcemaps.write())
+        .pipe(cleanCSS())
         .pipe(gulp.dest('./dist/css'))
         .pipe(browserSync.reload({
             stream: true
@@ -54,8 +59,7 @@ gulp.task('default', ['sass', 'images', 'js'], function() {
     return gulp.src('./dev/css/*.css');
 });
 
-gulp.task('watchSass', function(){
-    gulp.watch('./dev/css/*.scss', function () {
-        gulp.run('sass');
-    })
+gulp.task('watch', function(){
+    gulp.watch('./dev/css/*.scss', ['sass']);
+    gulp.watch(["./dev/js/*.js"], ['js'])
 });
