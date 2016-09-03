@@ -3,30 +3,26 @@ var portfolioView = {};
 portfolioView.initialize = function () {
     $('#aboutMe').hide();
     $('#contact').hide();
+    $('div[data-article="articles"]').fadeIn(300);
+    console.log('hit');
 };
 
 portfolioView.navViews = function() {
     $('.main-nav').on('click', function(e){
         e.preventDefault();
 
-        $('section div')
-            .fadeOut(500);
-
-        if(e.target.textContent == "About") {
-            $('#aboutMe').fadeIn(400);
-
-        } else if (e.target.textContent == "Work") {
-            $('section div')
-                .fadeOut(300)
-                .not('#aboutMe, #contact', ".template")
-                .fadeIn(300);
-        } else if (e.target.textContent == "Contact") {
-            $('section div')
-                .fadeOut(300);
-            $('#contact')
-                .fadeIn(300);
-        }
-
+        $('section > div')
+            .fadeOut(500, function(){
+                if(e.target.textContent == "About") {
+                    $('#aboutMe').fadeIn(300);
+                }
+                if (e.target.textContent == "Work") {
+                    $('div[data-article="articles"]').fadeIn(300);
+                }
+                if (e.target.textContent == "Contact") {
+                    $('#contact').fadeIn(300);
+                }
+            });
     })
 };
 $(document).ready(function(){

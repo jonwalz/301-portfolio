@@ -27,6 +27,7 @@ gulp.task('index', function () {
 
 gulp.task('js', function () {
    return gulp.src('./dev/js/*.js')
+       .pipe(uglify())
        .pipe(gulp.dest('./dist/js'));
 });
 

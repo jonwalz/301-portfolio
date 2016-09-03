@@ -1,4 +1,4 @@
-$background-color1: rgba(57, 106, 173, 0.97);
+$background-color1: rgba(57, 106, 173, 0.90);
 
 * {
   box-sizing: border-box;
@@ -152,9 +152,24 @@ section {
   aside nav ul {
     flex-direction: row;
     align-items: center;
+    width: 70%;
     li {
       align-self: auto;
     }
   }
-
 }
+
+@media screen and (min-width: 900px) {
+  aside nav ul {
+    flex-direction: row;
+    align-items: flex-end;
+    width: 70%;
+    li {
+      align-self: auto;
+      width: auto;
+    }
+  }
+  aside nav {
+    align-items: flex-end;
+  }
+  }

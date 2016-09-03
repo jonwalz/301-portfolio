@@ -13,11 +13,11 @@ function Piece(keys) {
 Piece.prototype.postIt = function(){
     var $newPiece = $('.templateDiv').clone(); //this creates a clone to save all styling and formatting
 
+    $newPiece.attr('data-article', 'articles');
     $newPiece.find(".pieceTitle").html(this.title);
     $newPiece.find('#sectionWrapper a').find('');
     $newPiece.find(".description p").html(this.description);
     $newPiece.find(".dateTime").html(this.date);
-
 
     $newPiece.removeClass('template templateDiv');
 
