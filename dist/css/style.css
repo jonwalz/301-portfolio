@@ -108,6 +108,9 @@ section {
 #sectionWrapper p {
   padding: 1.2em 0; }
 
+#sectionWrapper div {
+  padding: 0 1em; }
+
 #imageContainer img {
   max-height: 400px; }
 
@@ -116,6 +119,9 @@ section {
 
 #aboutMe p {
   padding: 20px; }
+
+#contact p {
+  padding: 0 1em; }
 
 @media screen and (min-width: 650px) {
   aside nav ul {

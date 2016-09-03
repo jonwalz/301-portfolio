@@ -122,6 +122,9 @@ section {
   p {
     padding: 1.2em 0;
   }
+  div {
+    padding: 0 1em;
+  }
 }
 
 #imageContainer img {
@@ -138,6 +141,11 @@ section {
   }
 }
 
+#contact {
+  p {
+    padding: 0 1em;
+  }
+}
 @media screen and (min-width: 650px) {
   aside nav ul {
     flex-direction: row;
