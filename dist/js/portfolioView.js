@@ -9,20 +9,22 @@ portfolioView.navViews = function() {
     $('.main-nav').on('click', function(e){
         e.preventDefault();
 
-        $('section')
-            .not(this)
+        $('section div')
             .fadeOut(500);
-        console.log(this);
-        $(this).fadeIn(500);
 
-
-        // change display of nav bar
         if(e.target.textContent == "About") {
-
-            // change display of content
+            $('#aboutMe').fadeIn(400);
 
         } else if (e.target.textContent == "Work") {
-
+            $('section div')
+                .fadeOut(300)
+                .not('#aboutMe, #contact')
+                .fadeIn(300);
+        } else if (e.target.textContent == "Contact") {
+            $('section div')
+                .fadeOut(300);
+            $('#contact')
+                .fadeIn(300);
         }
 
     })

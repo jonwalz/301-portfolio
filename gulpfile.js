@@ -38,7 +38,7 @@ gulp.task('images', function () {
        .pipe(gulp.dest('./dist/img'));
 });
 
-gulp.task('default', ['sass', 'images'], function() {
+gulp.task('default', ['sass', 'images', 'js'], function() {
     return gulp.src('./dev/css/*.css');
 });
 
