@@ -23,6 +23,7 @@ a {
   display: none; }
 
 #icon {
+  display: inline-block;
   padding: 0 1em;
   color: white;
   font-size: 40px; }
@@ -70,10 +71,16 @@ aside nav {
 
 #socialIcons {
   list-style-type: none;
-  display: flex; }
+  display: inline;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 20px; }
   #socialIcons li {
-    margin: 0 1em;
-    font-size: 32px; }
+    display: inline;
+    margin: 0;
+    font-size: 40px;
+    padding: 0.3rem; }
 
 section {
   font-family: 'Open Sans', sans-serif;
@@ -109,3 +116,10 @@ section {
 
 #aboutMe {
   padding: 20px; }
+
+@media screen and (min-width: 650px) {
+  aside nav ul {
+    flex-direction: row;
+    align-items: center; }
+    aside nav ul li {
+      align-self: auto; } }
