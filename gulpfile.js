@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var cleanCSS = require('gulp-clean-css');
+var concat = require('gulp-concat');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-sync').create();
@@ -14,6 +15,7 @@ gulp.task('sass', function () {
         .pipe(sass().on('error', sass.logError))
         .pipe(sourcemaps.write())
         .pipe(cleanCSS())
+        .pipe(concat('all.css'))
         .pipe(gulp.dest('./dist/css'))
         .pipe(browserSync.reload({
             stream: true
