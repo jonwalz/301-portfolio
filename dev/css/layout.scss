@@ -1,3 +1,6 @@
+$font1: 'Ubuntu', sans-serif;
+$font2: 'Vollkorn', serif;
+
 .template {
   display: none;
 }
@@ -6,7 +9,7 @@
   padding: 0 1em;
   color: white;
   font-size: 40px;
-  font-family: 'Cabin', sans-serif;
+  font-family: $font1;
 }
 
 .aside-wrapper {
@@ -67,5 +70,11 @@
 #contact {
   p {
     padding: 0 1em;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .aside-wrapper {
+    height: 100%;
   }
 }
