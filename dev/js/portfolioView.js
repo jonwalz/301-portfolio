@@ -35,7 +35,6 @@ portfolioView.navViews = function() {
         if(e.target.text == "Contact") {
             $('section > div').slideUp(300);
             $('#contact').animate({
-                left: "+=50",
                 height: "toggle"
             }, 300);
         }
