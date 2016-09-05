@@ -1,9 +1,9 @@
 var portfolioView = {};
 
 portfolioView.initialize = function () {
-    $('#aboutMe').hide();
-    $('#contact').hide();
-    $('div[data-article="articles"]').fadeIn(300);
+    // $('#aboutMe').hide();
+    // $('#contact').hide();
+    // $('div[data-article="articles"]').fadeIn(300);
     console.log('hit');
 };
 
@@ -12,12 +12,12 @@ portfolioView.navViews = function() {
         e.preventDefault();
 
         $('section > div')
-            .fadeOut(500, function(){
+            .hide(500, function(){
                 if(e.target.textContent == "About") {
-                    $('#aboutMe').fadeIn(300);
+                    $('#aboutMe').toggle();
                 }
                 if (e.target.textContent == "Work") {
-                    $('div[data-article="articles"]').fadeIn(300);
+                    $('div[data-article="articles"]').toggle();
                 }
                 if (e.target.textContent == "Contact") {
                     $('#contact').fadeIn(300);
@@ -25,6 +25,7 @@ portfolioView.navViews = function() {
             });
     })
 };
+
 $(document).ready(function(){
     portfolioView.initialize();
     portfolioView.navViews();
