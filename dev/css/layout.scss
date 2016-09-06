@@ -7,7 +7,7 @@ $font2: 'Vollkorn', serif;
 #icon {
   display: inline-block;
   padding: 0 1em;
-  color: white;
+  color: #385F7A;
   font-size: 40px;
   font-family: $font1;
 }
@@ -23,8 +23,7 @@ $font2: 'Vollkorn', serif;
   display: inline;
   margin: 0;
   padding: 0;
-  position: absolute;
-  right: 20px;
+  position: relative;
   li {
     display: inline;
     margin: 0;
@@ -41,15 +40,14 @@ $font2: 'Vollkorn', serif;
   h1 {
     font-size: 1.5em;
     font-family: 'Cabin', sans-serif;
-
   }
   p {
-    padding: 1.2em 0;
+    padding: 0 3rem;
     font-family: 'Old Standard TT', serif;
     font-size: 18px;
   }
   div {
-    padding: 0 1.3em;
+    padding: 3.5rem 1.3rem;
   }
 }
 
@@ -69,14 +67,24 @@ $font2: 'Vollkorn', serif;
 
 #contact {
   p {
-    padding: 0 1em;
+    padding: 1rem 3rem;
   }
 }
 
 @media screen and (min-width: 900px) {
+  #icon {
+    position: fixed;
+    z-index: 1;
+  }
+
   .aside-wrapper {
     height: 100%;
     position: fixed;
+    top: 0;
     width: 25%;
+  }
+
+  #sectionWrapper p {
+    padding: 0 13rem;
   }
 }

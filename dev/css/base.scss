@@ -2,7 +2,9 @@
 $font1: 'Ubuntu', sans-serif;
 $font2: 'Vollkorn', serif;
 
-$background-color1: rgba(57, 106, 173, 0.90);
+$background-color1: #DEF1FF;
+$linkColor: rgba(56, 95, 122, 0.90);
+$textColor: #385F7A ;
 
 * {
   box-sizing: border-box;
@@ -26,7 +28,7 @@ header {
   margin: 10px 0;
 }
 a {
-  color: #D8CD03;
+  color: $linkColor;
   text-decoration: none;
 }
 main {
@@ -63,6 +65,7 @@ aside nav {
       font-size: 24px;
       padding: 0 20px;
       font-family: $font1;
+      margin: 0;
     }
     ul {
       flex-direction: row;
@@ -78,7 +81,7 @@ section {
   font-family: $font1;
   font-size: 22px;
   font-weight: 300;
-  color: #C3D4EB;
+  color: $textColor;
   display: flex;
   align-self: flex-start;
   flex-grow: 1;
@@ -86,7 +89,7 @@ section {
   margin: 0;
   align-items: center;
   > div {
-    background-color: rgba(57, 106, 173, 0.97);
+    background-color: $background-color1;
     margin: 1em 0;
   }
   &:nth-of-type(1n) {
@@ -118,16 +121,27 @@ section {
   }
   aside nav ul {
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     width: 70%;
     li {
       align-self: auto;
       width: auto;
     }
   }
-  section > div {
+
+  section {
+    justify-content: center;
+  }
+
+  section > div[data-article="articles"] {
+    margin: 0;
+    width: 90%;
+  }
+
+  section > div[data-article="articles"]:first-child {
     margin: 0;
   }
+
   section:nth-of-type(1n) {
     margin-top: 0;
   }
