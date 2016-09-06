@@ -22,8 +22,8 @@ gulp.task('sass', function () {
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         .pipe(sourcemaps.write())
-        .pipe(cleanCSS())
         .pipe(concat('all.css'))
+        .pipe(cleanCSS())
         .pipe(gulp.dest('./dist/css'))
         .pipe(browserSync.reload({
             stream: true

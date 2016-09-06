@@ -46,10 +46,10 @@ $font2: 'Vollkorn', serif;
   p {
     padding: 1.2em 0;
     font-family: 'Old Standard TT', serif;
-
+    font-size: 18px;
   }
   div {
-    padding: 0 1em;
+    padding: 0 1.3em;
   }
 }
 
@@ -76,5 +76,7 @@ $font2: 'Vollkorn', serif;
 @media screen and (min-width: 900px) {
   .aside-wrapper {
     height: 100%;
+    position: fixed;
+    width: 25%;
   }
 }
