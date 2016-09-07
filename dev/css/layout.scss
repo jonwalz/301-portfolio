@@ -37,6 +37,8 @@ $font2: 'Vollkorn', serif;
 }
 
 #sectionWrapper {
+    background-color: #DEF1FF;
+    margin-bottom: 20px;
   h1 {
     font-size: 1.5em;
     font-family: 'Cabin', sans-serif;
@@ -70,6 +72,9 @@ $font2: 'Vollkorn', serif;
     padding: 1rem 3rem;
   }
 }
+#workTemplate {
+  background-color: transparent;
+}
 @media screen and (min-width: 650px) {
   
 }
@@ -91,5 +96,6 @@ $font2: 'Vollkorn', serif;
 
   #sectionWrapper p {
     padding: 0 13rem;
+    margin: 30px;
   }
 }

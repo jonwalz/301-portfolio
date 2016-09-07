@@ -4,7 +4,7 @@ var portfolioPieces = [
         date: "2016-08-15",
         url: "www.jonathanwalz.com",
         gitUrl: "https://www.github.com",
-        Description: "This is the first piece for my online portfolio. I created this during my coursework at Code Fellows"
+        description: "This is the first piece for my online portfolio. I created this during my coursework at Code Fellows"
 
     },
     {
@@ -12,7 +12,7 @@ var portfolioPieces = [
         date: "2016-01-14",
         url: "www.jonathanwalz.com",
         gitUrl: "https://www.github.com",
-        Description: "This is the first piece for my online portfolio. I created this during my coursework at Code Fellows"
+        description: "This is the second piece for my online portfolio. I created this during my coursework at Code Fellows"
 
     },
     {
@@ -20,7 +20,7 @@ var portfolioPieces = [
         date: "2016-03-15",
         url: "www.jonathanwalz.com",
         gitUrl: "https://www.github.com",
-        Description: "This is the first piece for my online portfolio. I created this during my coursework at Code Fellows"
+        description: "This is the third piece for my online portfolio. I created this during my coursework at Code Fellows"
 
     }
 ];
