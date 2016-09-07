@@ -7,7 +7,7 @@ $font2: 'Vollkorn', serif;
 #icon {
   display: inline-block;
   padding: 0 1em;
-  color: #385F7A;
+  color: white;
   font-size: 40px;
   font-family: $font1;
 }
@@ -70,11 +70,16 @@ $font2: 'Vollkorn', serif;
     padding: 1rem 3rem;
   }
 }
+@media screen and (min-width: 650px) {
+  
+}
 
 @media screen and (min-width: 900px) {
   #icon {
     position: fixed;
     z-index: 1;
+    color: #385F7A;
+    padding: 1.3rem 3rem;
   }
 
   .aside-wrapper {
