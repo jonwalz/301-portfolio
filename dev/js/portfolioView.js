@@ -3,8 +3,6 @@ var portfolioView = {};
 portfolioView.initialize = function () {
     $('#aboutMe').hide();
     $('#contact').hide();
-    // $('div[data-article="articles"]').fadeIn(300);
-    console.log('hit');
 };
 
 portfolioView.navViews = function() {
@@ -22,7 +20,7 @@ portfolioView.navViews = function() {
         }
         if(e.target.text == "Work") {
             $('section > div').slideUp(300);
-            $("div[data-article='articles']")
+            $("#workTemplate")
                 .delay(200)
                 .hide()
                 .each(function (i) {

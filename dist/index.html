@@ -8,6 +8,24 @@
     <link rel="stylesheet" href="vendor/normalize.css">
     <script src="https://use.fontawesome.com/e0f09b9cc9.js"></script>
     <link rel="stylesheet" href="css/all.css">
+
+    <script id="template" type="text/x-handlebars-template">
+        <div>
+            <div id="sectionWrapper">
+                <div>
+                    <h1 class="pieceTitle">{{title}}</h1>
+                    <address data-url><a href="">Name of Piece</a></address>
+                    <span class="dateTime">Date</span>
+                </div>
+                <div class="description">
+                    <p>VHS pitchfork godard tousled austin mixtape YOLO, tacos wayfarers keytar master cleanse. Post-ironic you probably haven't heard of them kinfolk marfa, before they sold out iPhone man bun pop-up ethical godard next level 3 wolf moon
+                        irony drinking vinegar cornhole. Pickled brunch keffiyeh tote bag paleo. Raw denim tattooed taxidermy messenger bag kale chips knausgaard. Actually letterpress artisan semiotics. Tattooed VHS DIY lo-fi post-ironic iPhone. Chambray
+                        XOXO photo booth pinterest flexitarian, portland crucifix knausgaard sustainable kogi farm-to-table vice ethical irony.</p>
+                </div>
+            </div>
+        </div>
+    </script>
+
 </head>
 
 <body>
@@ -37,26 +55,15 @@
                 <p>
                     email: <a href="mailto:jon.walz.music@gmail.com">jon.walz.music@gmail.com</a>
                 </p>
-                    <ul id="socialIcons">
-                        <li><a href="https://github.com/jonwalz" title="Github"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/jonathanwalz" title="LinkedIn"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-                    </ul>
-            </div>
-            <div class="templateDiv template">
-                <div id="sectionWrapper">
-                    <div>
-                        <h1 class="pieceTitle">{{title}}</h1>
-                        <address data-url><a href="">Name of Piece</a></address>
-                        <span class="dateTime">Date</span>
-                    </div>
-                    <div class="description">
-                        <p>VHS pitchfork godard tousled austin mixtape YOLO, tacos wayfarers keytar master cleanse. Post-ironic you probably haven't heard of them kinfolk marfa, before they sold out iPhone man bun pop-up ethical godard next level 3 wolf
-                            moon irony drinking vinegar cornhole. Pickled brunch keffiyeh tote bag paleo. Raw denim tattooed taxidermy messenger bag kale chips knausgaard. Actually letterpress artisan semiotics. Tattooed VHS DIY lo-fi post-ironic iPhone.
-                            Chambray XOXO photo booth pinterest flexitarian, portland crucifix knausgaard sustainable kogi farm-to-table vice ethical irony.</p>
-                    </div>
-                </div>
+                <ul id="socialIcons">
+                    <li><a href="https://github.com/jonwalz" title="Github"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/jonathanwalz" title="LinkedIn"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                </ul>
             </div>
 
+        
+            <div id="workTemplate"></div>
+        
         </section>
     </main>
     <footer>
