@@ -8,7 +8,7 @@ $font2: 'Vollkorn', serif;
   display: inline-block;
   padding: 0 1em;
   color: white;
-  font-size: 40px;
+  // font-size: 40px;
   font-family: $font1;
 }
 
@@ -20,14 +20,14 @@ $font2: 'Vollkorn', serif;
 
 #socialIcons {
   list-style-type: none;
-  display: inline;
+  display: block;
   margin: 0;
   padding: 0;
   position: relative;
   li {
-    display: inline;
+    display: inline-block;
     margin: 0;
-    font-size: 40px;
+    font-size: 2.5rem;
     padding: 0.3rem;
   }
 }
@@ -40,16 +40,16 @@ $font2: 'Vollkorn', serif;
     background-color: #DEF1FF;
     margin-bottom: 20px;
   h1 {
-    font-size: 1.5em;
+    // font-size: 1.5em;
     font-family: 'Cabin', sans-serif;
   }
   p {
     padding: 0 3rem;
     font-family: 'Old Standard TT', serif;
-    font-size: 18px;
+    // font-size: 18px;
   }
   div {
-    padding: 3.5rem 1.3rem;
+    padding: 1.5rem 1.3rem;
   }
 }
 
@@ -68,10 +68,9 @@ $font2: 'Vollkorn', serif;
 }
 
 #contact {
-  p {
     padding: 1rem 3rem;
-  }
 }
+
 #workTemplate {
   background-color: transparent;
 }
@@ -95,7 +94,6 @@ $font2: 'Vollkorn', serif;
   }
 
   #sectionWrapper p {
-    padding: 0 13rem;
-    margin: 30px;
+    padding: 0 6rem;
   }
 }
