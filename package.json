@@ -1,0 +1,31 @@
+{
+  "name": "301-portfolio",
+  "version": "1.0.0",
+  "description": "A portfolio page assignment for Code Fellows 301 course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonwalz/301-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonwalz/301-portfolio/issues"
+  },
+  "homepage": "https://github.com/jonwalz/301-portfolio#readme",
+  "devDependencies": {
+    "browser-sync": "^2.14.3",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-image": "^2.6.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^2.0.0"
+  },
+  "dependencies": {
+    "handlebars": "^4.0.5"
+  }
+}
