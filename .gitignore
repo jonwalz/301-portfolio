@@ -1,6 +1,7 @@
 # Created by .ignore support plugin (hsz.mobi)
 bower.json
 .idea/workspace.xml
+.vscode/
 ### Node template
 # Logs
 logs
