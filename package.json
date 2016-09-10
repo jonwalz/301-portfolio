@@ -20,10 +20,16 @@
     "browser-sync": "^2.14.3",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.0.12",
+    "gulp-concat": "^2.6.0",
+    "gulp-declare": "^0.3.0",
+    "gulp-handlebars": "^4.0.0",
     "gulp-image": "^2.6.0",
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.6.0",
-    "gulp-uglify": "^2.0.0"
+    "gulp-uglify": "^2.0.0",
+    "gulp-wrap": "^0.13.0",
+    "handlebars": "^3.0.0",
+    "merge-stream": "^1.0.0"
   },
   "dependencies": {
     "handlebars": "^4.0.5"

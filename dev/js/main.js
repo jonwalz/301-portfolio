@@ -25,5 +25,5 @@ portfolioPieces.forEach(function(el){
 
 portfolioBlocks.forEach(function(p){
    $("#workTemplate").append(p.postIt());
-   console.log(p.postIt());
+   console.log( "POST IT");
 });
