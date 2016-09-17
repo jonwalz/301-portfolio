@@ -40,6 +40,13 @@ portfolioView.navViews = function() {
     })
 };
 
+portfolioView.initIndexPage = function () {
+  Piece.all.forEach(function(a) {
+      $('workTemplate').append(a.postIt())
+  })
+};
+
+
 $(document).ready(function(){
     portfolioView.initialize();
     portfolioView.navViews();

@@ -1,4 +1,4 @@
-var portfolioBlocks = [];
+(function (module) {
 
 function Piece(keys) {
     // Title, Date, Url, Github url, Description, imgUrl
@@ -9,6 +9,7 @@ function Piece(keys) {
     this.description = keys.description;
     this.imgUrl = keys.imgUrl;
 }
+Piece.all = [];
 
 Piece.prototype.postIt = function(){
 
@@ -19,11 +20,34 @@ Piece.prototype.postIt = function(){
     return compiledPost(this);
 };
 
-portfolioPieces.forEach(function(el){
-    portfolioBlocks.push(new Piece(el))
-});
+// portfolioPieces.forEach(function(el){
+//     portfolioBlocks.push(new Piece(el))
+// });
+//
+// portfolioBlocks.forEach(function(p){
+//    $("#workTemplate").append(p.postIt());
+//
+// });
 
-portfolioBlocks.forEach(function(p){
-   $("#workTemplate").append(p.postIt());
-   console.log( "POST IT");
-});
+Piece.loadAll = function (rawData) {
+    Piece.all = rawData.map(function(el){
+        return new Piece(el);
+    })
+};
+
+Piece.fetchData = function(callback) {
+    if(localStorage.portPieces) {
+        Piece.loadAll(localStorage.portPieces);
+        callback();
+    } else {
+        $.getJSON('/data/portfolioData.json', function (rawData) {
+            Piece.loadAll(rawData);
+            localStorage.rawData = JSON.stringify(rawData);
+            callback();
+        })
+    }
+};
+
+module.Piece = Piece;
+
+})(window);
