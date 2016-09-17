@@ -1,4 +1,4 @@
-{ "portfolioPieces" : [
+[
     {
         "title": "My first portfolio piece",
         "date": "2016-08-15",
@@ -23,4 +23,4 @@
         "description": "This is the third piece for my online portfolio. I created this during my coursework at Code Fellows"
 
     }
-]}
+]

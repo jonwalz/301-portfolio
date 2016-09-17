@@ -1,1 +1,55 @@
-!function(t){function i(t){this.title=t.title,this.date=t.date,this.url=t.url,this.gitUrl=t.gitUrl,this.description=t.description,this.imgUrl=t.imgUrl}i.all=[],i.prototype.postIt=function(){var t=$("#template").html(),i=Handlebars.compile(t);return i(this)},i.loadAll=function(t){i.all=t.map(function(t){return new i(t)})},i.fetchData=function(t){localStorage.portPieces?(i.loadAll(localStorage.portPieces),t()):$.getJSON("/data/portfolioData.json",function(l){i.loadAll(l),localStorage.rawData=JSON.stringify(l),t()})},t.Piece=i}(window);
+(function (module) {
+
+function Piece(keys) {
+    // Title, Date, Url, Github url, Description, imgUrl
+    this.title = keys.title;
+    this.date = keys.date;
+    this.url = keys.url;
+    this.gitUrl = keys.gitUrl;
+    this.description = keys.description;
+    this.imgUrl = keys.imgUrl;
+}
+Piece.all = [];
+
+Piece.prototype.postIt = function(){
+
+    var newPiece = $('#template').html();
+
+    var compiledPost = Handlebars.compile(newPiece);
+
+    return compiledPost(this);
+};
+
+// portfolioPieces.forEach(function(el){
+//     portfolioBlocks.push(new Piece(el))
+// });
+//
+// portfolioBlocks.forEach(function(p){
+//    $("#workTemplate").append(p.postIt());
+//
+// });
+
+Piece.loadAll = function (rawData) {
+    Piece.all = rawData.map(function(el){
+        return new Piece(el);
+    });
+};
+
+Piece.fetchData = function(callback) {
+    if(localStorage.portPieces) {
+        Piece.loadAll(JSON.parse(localStorage.portPieces));
+        callback();
+    } else {
+        $.getJSON('/data/portfolioData.json', function (rawData) {
+            console.log(rawData);
+            Piece.loadAll(rawData);
+            localStorage.portPieces = JSON.stringify(rawData);
+
+            callback();
+        });
+    }
+};
+
+module.Piece = Piece;
+
+})(window);

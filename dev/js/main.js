@@ -32,19 +32,21 @@ Piece.prototype.postIt = function(){
 Piece.loadAll = function (rawData) {
     Piece.all = rawData.map(function(el){
         return new Piece(el);
-    })
+    });
 };
 
 Piece.fetchData = function(callback) {
     if(localStorage.portPieces) {
-        Piece.loadAll(localStorage.portPieces);
+        Piece.loadAll(JSON.parse(localStorage.portPieces));
         callback();
     } else {
         $.getJSON('/data/portfolioData.json', function (rawData) {
+            console.log(rawData);
             Piece.loadAll(rawData);
-            localStorage.rawData = JSON.stringify(rawData);
+            localStorage.portPieces = JSON.stringify(rawData);
+
             callback();
-        })
+        });
     }
 };
 
