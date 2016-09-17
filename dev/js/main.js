@@ -16,8 +16,9 @@ Piece.prototype.postIt = function(){
     var newPiece = $('#template').html();
 
     var compiledPost = Handlebars.compile(newPiece);
-
+    console.log("Handlebars view ran");
     return compiledPost(this);
+
 };
 
 // portfolioPieces.forEach(function(el){

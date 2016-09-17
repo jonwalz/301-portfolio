@@ -42,7 +42,7 @@ portfolioView.navViews = function() {
 
 portfolioView.initIndexPage = function () {
   Piece.all.forEach(function(a) {
-      $('workTemplate').append(a.postIt())
+      $('#workTemplate').append(a.postIt());
   })
 };
 
