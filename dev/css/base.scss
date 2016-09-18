@@ -154,8 +154,13 @@ footer {
 
 @media screen and (min-width: 900px) {
 
+  header {
+    margin: 0;
+  }
+
   main {
     flex-direction: row;
+    height: 100vh;
   }
 
   aside nav {
@@ -174,6 +179,7 @@ footer {
 
   section {
     justify-content: center;
+    height: 100vh;
   }
 
   section > div[data-article="articles"] {
