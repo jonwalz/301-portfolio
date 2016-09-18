@@ -21,15 +21,6 @@ Piece.prototype.postIt = function(){
 
 };
 
-// portfolioPieces.forEach(function(el){
-//     portfolioBlocks.push(new Piece(el))
-// });
-//
-// portfolioBlocks.forEach(function(p){
-//    $("#workTemplate").append(p.postIt());
-//
-// });
-
 Piece.loadAll = function (rawData) {
     Piece.all = rawData.map(function(el){
         return new Piece(el);
