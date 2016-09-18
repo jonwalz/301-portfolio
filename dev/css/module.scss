@@ -1,0 +1,78 @@
+$font1: 'Ubuntu', sans-serif;
+$font2: 'Vollkorn', serif;
+
+#icon {
+  display: inline-block;
+  padding: 0 1em;
+  color: white;
+  font-family: $font1;
+}
+
+#socialIcons {
+  list-style-type: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  li {
+    display: inline-block;
+    margin: 0;
+    font-size: 2.5rem;
+    padding: 0.3rem;
+  }
+}
+
+#sectionWrapper {
+  background-color: #DEF1FF;
+  margin-bottom: 20px;
+  h1 {
+    // font-size: 1.5em;
+    font-family: 'Cabin', sans-serif;
+  }
+  p {
+    padding: 0 3rem;
+    font-family: 'Old Standard TT', serif;
+    // font-size: 18px;
+  }
+  div {
+    padding: 1.5rem 1.3rem;
+  }
+}
+
+#imageContainer img {
+  max-height: 400px;
+}
+
+#portfolioPieces {
+  display: inline-block;
+}
+
+#aboutMe {
+  p {
+    padding: 20px 40px;
+  }
+}
+
+#contact {
+  padding: 1rem 3rem;
+}
+
+#workTemplate {
+  background-color: transparent;
+}
+@media screen and (min-width: 650px) {
+
+}
+
+@media screen and (min-width: 900px) {
+  #icon {
+    position: fixed;
+    z-index: 1;
+    color: #385F7A;
+    padding: 1.3rem 3rem;
+  }
+
+  #sectionWrapper p {
+    padding: 0 6rem;
+  }
+}

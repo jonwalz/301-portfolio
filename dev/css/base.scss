@@ -132,7 +132,14 @@ section {
     text-align: center;
   }
 }
-
+footer {
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-family: $font1;
+  text-align: center;
+}
 @media screen and (min-width: 650px) {
   aside nav ul {
     flex-direction: row;
