@@ -6,7 +6,9 @@ $font2: 'Vollkorn',serif;
 $background-color1: #DEF1FF;
 $linkColor: rgba(56, 95, 122, 0.90);
 $textColor: #385F7A;
-
+//* {
+//  border: 1px solid red;
+//}
 html {font-size: 1em;}
 
 body {
@@ -161,6 +163,10 @@ footer {
   main {
     flex-direction: row;
     height: 100vh;
+    section {
+      min-height: 100%;
+    }
+
   }
 
   aside nav {
@@ -179,7 +185,6 @@ footer {
 
   section {
     justify-content: center;
-    height: 100vh;
   }
 
   section > div[data-article="articles"] {
