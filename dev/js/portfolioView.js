@@ -1,10 +1,9 @@
-// TODO: Add some comments to this! What's all this stuff doing?
-
+// This is a module for creating the view as the user interacts
 (function(module){
 
 var portfolioView = {};
 
-portfolioView.initialize = function () { // TODO: What's this stuff do?
+portfolioView.initialize = function () { // This method hides the 'about me' and 'contact' section on load
     $('#aboutMe').hide();
     $('#contact').hide();
 };
@@ -13,8 +12,11 @@ portfolioView.navViews = function() {
     $('.main-nav').on('click', function(e){
         e.preventDefault();
 
+        // These if statements toggle the page view when navigation links are clicked by user
+        // If the text of the clicked event target equals the string in the condition, the entire section is hidden
+        // then the section related to the click is shown
 
-        if(e.target.text == "About") { // TODO: Explain what these if statements are for.
+        if(e.target.text == "About") {
             $('section > div').slideUp(300);
             $('#aboutMe')
                 .delay(200)
@@ -50,7 +52,7 @@ portfolioView.initIndexPage = function () {
 };
 
 
-$(document).ready(function(){ // TODO: Explain why these are being run.
+$(document).ready(function(){ // These function calls initiate the views after the document has loaded
     portfolioView.initialize();
     portfolioView.navViews();
 });
