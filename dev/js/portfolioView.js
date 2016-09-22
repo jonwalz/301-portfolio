@@ -1,19 +1,20 @@
+// TODO: Add some comments to this! What's all this stuff doing?
+
 (function(module){
 
 var portfolioView = {};
 
-portfolioView.initialize = function () {
+portfolioView.initialize = function () { // TODO: What's this stuff do?
     $('#aboutMe').hide();
     $('#contact').hide();
 };
 
 portfolioView.navViews = function() {
-
     $('.main-nav').on('click', function(e){
         e.preventDefault();
 
 
-        if(e.target.text == "About") {
+        if(e.target.text == "About") { // TODO: Explain what these if statements are for.
             $('section > div').slideUp(300);
             $('#aboutMe')
                 .delay(200)
@@ -49,7 +50,7 @@ portfolioView.initIndexPage = function () {
 };
 
 
-$(document).ready(function(){
+$(document).ready(function(){ // TODO: Explain why these are being run.
     portfolioView.initialize();
     portfolioView.navViews();
 });
