@@ -7,7 +7,7 @@ portfolioView.initialize = function () {
 
 portfolioView.navViews = function() {
 
-    $('.main-nav').on('click', function(e){
+    $('.main-nav').on('click', function(e){ // TODO: you could possibly use 'apply' to provide a context to the sections being hidden or shown
         e.preventDefault();
 
 
