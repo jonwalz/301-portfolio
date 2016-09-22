@@ -12,11 +12,16 @@
     <script id="template" type="text/x-handlebars-template">
         <div id="sectionWrapper">
             <div>
-                <address><a href={{url}}>{{title}}</a></address>
-                <span class="dateTime">{{date}}</span>
+                <div>
+                    <address><a href={{url}}>{{title}}</a></address>
+                    <span class="dateTime">{{date}}</span>
+                </div>
+                <div class="description">
+                    <p>{{description}}</p>
+                </div>
             </div>
-            <div class="description">
-                <p>{{description}}</p>
+            <div>
+                <img src={{imgUrl}} alt="">
             </div>
         </div>
     </script>
@@ -24,57 +29,63 @@
 </head>
 
 <body>
-    <!-- -->
-    <header>
-        <div id="icon"><h3>Jon Walz</h3></div>
-    </header>
-    <main>
-        <aside>
-            <div class="aside-wrapper">
-                <nav class="main-nav">
-                    <ul>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Work</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-        </aside>
-        <section>
-            <div id="aboutMe">
-                <p>My name is Jon Walz and I am Northwest Native. I hail from the small town of Eugene Oregon and currently live in the beautiful city of Portland Oregon. I have been a web developer since 2014 and I love specialty coffee and have a love
-                    for all things coffee.</p>
-            </div>
-            <div id="contact">
-                
-                    email: <a href="mailto:jon.walz.music@gmail.com">jon.walz.music@gmail.com</a>
-                
-                <ul id="socialIcons">
-                    <li><a href="https://github.com/jonwalz" title="Github"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/jonathanwalz" title="LinkedIn"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+<!-- -->
+<header>
+    <div id="icon"><h3>Jon Walz</h3></div>
+</header>
+<main>
+    <aside>
+        <div class="aside-wrapper">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Work</a></li>
+                    <li><a href="">Contact</a></li>
                 </ul>
-            </div>
+            </nav>
+        </div>
 
-        
-            <div id="workTemplate"></div>
-        
-        </section>
-    </main>
-    <footer>
-        <div>Created by Jon Walz &copy;2016</div>
-    </footer>
-    <!-- scripts -->
-    <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <script src="./js/handlebars.min.js"></script>
-    <script src="./js/portfolioData.js"></script>
-    <script src="./js/templates.js"></script>
-    <script src="./js/main.js"></script>
-    <script src="./js/portfolioView.js"></script>
-    <script src="./vendor/flowtype.js"></script>
-    <script >
-        Piece.fetchData(portfolioView.initIndexPage);
-    </script>
+    </aside>
+    <section>
+        <div id="aboutMe">
+            <p>My name is Jon Walz and I am Northwest Native. I hail from the small town of Eugene Oregon and currently
+                live in the beautiful city of Portland Oregon. I have been a web developer since 2014 and I love
+                specialty coffee and have a love
+                for all things coffee.</p>
+        </div>
+        <div id="contact">
+
+            <a href="mailto:jon.walz.music@gmail.com">jon.walz.music@gmail.com</a>
+
+            <ul id="socialIcons">
+                <li><a href="https://github.com/jonwalz" title="Github"><i class="fa fa-github-square"
+                                                                           aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/jonathanwalz" title="LinkedIn"><i class="fa fa-linkedin-square"
+                                                                                           aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div id="workTemplate"></div>
+
+    </section>
+</main>
+<footer>
+    <div>Created by Jon Walz &copy;2016</div>
+</footer>
+<!-- scripts -->
+<script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+<script src="./js/handlebars.min.js"></script>
+<script src="./js/portfolioData.js"></script>
+<script src="./js/templates.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/portfolioView.js"></script>
+<script src="./vendor/flowtype.js"></script>
+<script>
+    Piece.fetchData(portfolioView.initIndexPage);
+</script>
 </body>
 
 </html>

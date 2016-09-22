@@ -1,3 +1,5 @@
+(function(module){
+
 var portfolioView = {};
 
 portfolioView.initialize = function () {
@@ -51,3 +53,6 @@ $(document).ready(function(){
     portfolioView.initialize();
     portfolioView.navViews();
 });
+
+    module.portfolioView = portfolioView;
+})(window);
