@@ -28,18 +28,13 @@ Piece.loadAll = function (rawData) {
 };
 
 Piece.fetchData = function(callback) {
-    if(localStorage.portPieces) {
-        Piece.loadAll(JSON.parse(localStorage.portPieces));
-        callback();
-    } else {
         $.getJSON('/data/portfolioData.json', function (rawData) {
             console.log(rawData);
             Piece.loadAll(rawData);
             localStorage.portPieces = JSON.stringify(rawData);
 
             callback();
-        });
-    }
+    });
 };
 
 module.Piece = Piece;
