@@ -11,7 +11,7 @@ function Piece(keys) {
 }
 Piece.all = [];
 
-Piece.prototype.postIt = function(){
+Piece.prototype.postIt = function(){ // TODO: Explain what this method does.
 
     var newPiece = $('#template').html();
 
@@ -21,13 +21,13 @@ Piece.prototype.postIt = function(){
 
 };
 
-Piece.loadAll = function (rawData) {
+Piece.loadAll = function (rawData) { //TODO: Explain what this method does.
     Piece.all = rawData.map(function(el){
         return new Piece(el);
     });
 };
 
-Piece.fetchData = function(callback) {
+Piece.fetchData = function(callback) { //TODO: Explain what this method does.
         $.getJSON('/data/portfolioData.json', function (rawData) {
             console.log(rawData);
             Piece.loadAll(rawData);
