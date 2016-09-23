@@ -11,7 +11,7 @@ function Piece(keys) {
 }
 Piece.all = [];
 
-Piece.prototype.postIt = function(){ // TODO: Explain what this method does.
+Piece.prototype.postIt = function(){ // This function compiles the object being called upon using Handlebars compile method
 
     var newPiece = $('#template').html();
 
@@ -21,7 +21,7 @@ Piece.prototype.postIt = function(){ // TODO: Explain what this method does.
 
 };
 
-Piece.loadAll = function (rawData) { //TODO: Explain what this method does.
+Piece.loadAll = function (rawData) { // This function sends each instance from rawData through the new Piece constructor and attaches the returned array to Piece.all
     Piece.all = rawData.map(function(el){
         return new Piece(el);
     });
