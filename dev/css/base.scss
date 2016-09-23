@@ -3,9 +3,9 @@
 $font1: 'Ubuntu',sans-serif;
 $font2: 'Vollkorn',serif;
 
-$background-color1: #DEF1FF;
+$background-color1: #F5F5F5;
 $linkColor: rgba(56, 95, 122, 0.90);
-$textColor: #385F7A;
+$textColor: #67727A;
 //* {
 //  border: 1px solid red;
 //}
@@ -14,9 +14,10 @@ html {font-size: 1em;}
 body {
   background-color: white;
   font-family: $font2;
+  font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.45;
-  color: #333;
+  color: #67727A;
 }
 
 h1, h2, h3, h4 {

@@ -1,26 +1,42 @@
 [
-    {
-        "title": "My first portfolio piece",
-        "date": "2016-08-15",
-        "url": "www.jonathanwalz.com",
-        "gitUrl": "https://www.github.com",
-        "description": "This is the first piece for my online portfolio. I created this during my coursework at Code Fellows"
-
-    },
-    {
-        "title": "My Second portfolio piece",
-        "date": "2016-01-14",
-        "url": "www.jonathanwalz.com",
-        "gitUrl": "https://www.github.com",
-        "description": "This is the second piece for my online portfolio. I created this during my coursework at Code Fellows"
-
-    },
-    {
-        "title": "My Third portfolio piece",
-        "date": "2016-03-15",
-        "url": "www.jonathanwalz.com",
-        "gitUrl": "https://www.github.com",
-        "description": "This is the third piece for my online portfolio. I created this during my coursework at Code Fellows"
-
-    }
+  {
+    "title": "Cookie Stand",
+    "date": "2015-09-20",
+    "url": "https://github.com/jonwalz/theatreTimes",
+    "imgUrl": "./img/cookieStand.png",
+    "gitUrl": "https://github.com/jonwalz/theatreTimes",
+    "description": "A project created during Code Fellows Coursework."
+  },
+  {
+    "title": "Theatre Showtimes App",
+    "date": "2015-09-20",
+    "url": "https://github.com/jonwalz/theatreTimes",
+    "imgUrl": "./img/SStheatre.jpg",
+    "gitUrl": "https://github.com/jonwalz/theatreTimes",
+    "description": "A simple web app that pulls local movie showtimes by zip code."
+  },
+  {
+    "title": "Sandy Salmon Bed and Breakfast",
+    "date": "2015-05-01",
+    "url": "http://sandysalmon.com/",
+    "imgUrl": "./img/SSscreenShot.png",
+    "gitUrl": "https://www.github.com",
+    "description": "This was a freelance project I completed for a family friend"
+  },
+  {
+    "title": "Weather App",
+    "date": "2015-08-15",
+    "url": "http://jonathanwalz.com/weather/index.html",
+    "imgUrl": "./img/weatherApp.png",
+    "gitUrl": "https://github.com/jonwalz/weatherapp",
+    "description": "A simple web app that provides a weather forcast"
+  },
+  {
+    "title": "Angular TODO App",
+    "date": "2015-12-01",
+    "url": "http://jonathanwalz.com/todo/todo/index.html",
+    "imgUrl": "./img/todoImg.jpg",
+    "gitUrl": "https://github.com/jonwalz/angularTodo",
+    "description": "A TODO list web app made with Angular.js"
+  }
 ]

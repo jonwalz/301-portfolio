@@ -1,6 +1,8 @@
 $font1: 'Ubuntu', sans-serif;
 $font2: 'Vollkorn', serif;
 
+$background-color1: #F5F5F5;
+
 .template {
   display: none;
 }
@@ -9,33 +11,19 @@ $font2: 'Vollkorn', serif;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .no-display {
   display: none !important;
 }
 
-@media screen and (min-width: 650px) {
-  
-}
-
 @media screen and (min-width: 900px) {
-
-  #icon {
-    position: fixed;
-    z-index: 1;
-    color: #385F7A;
-    padding: 1.3rem 3rem;
-  }
 
   .aside-wrapper {
     height: 100%;
     position: fixed;
     top: 0;
     width: 25%;
-  }
-
-  #sectionWrapper p {
-    padding: 0 6rem;
   }
 }
