@@ -28,7 +28,7 @@ Piece.loadAll = function (rawData) { // This function sends each instance from r
 };
 
 Piece.fetchData = function(callback) { //
-        $.getJSON('/data/portfolioData.json', function (rawData) {
+        $.getJSON('./data/portfolioData.json', function (rawData) {
             Piece.loadAll(rawData);
             localStorage.portPieces = JSON.stringify(rawData);
 

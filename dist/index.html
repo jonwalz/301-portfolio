@@ -38,9 +38,9 @@
         <div class="aside-wrapper">
             <nav class="main-nav">
                 <ul>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Work</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/">Work</a></li>
+                    <li><a href="/contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -78,13 +78,17 @@
 <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
         crossorigin="anonymous"></script>
 <script src="./js/handlebars.min.js"></script>
-<script src="./js/portfolioData.js"></script>
+<script src="./vendor/page.js"></script>
+
 <script src="./js/templates.js"></script>
 <script src="./js/main.js"></script>
 <script src="./js/portfolioView.js"></script>
-<script src="./vendor/flowtype.js"></script>
+<script src="./js/articleController.js"></script>
+<script src="./js/aboutController.js"></script>
+<script src="./js/contactController.js"></script>
+<script src="./js/routes.js"></script>
 <script>
-    Piece.fetchData(portfolioView.initIndexPage);
+
 </script>
 </body>
 

@@ -12,12 +12,29 @@ $textColor: #67727A;
 html {font-size: 1em;}
 
 body {
-  background-color: white;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d1d1ff+0,00ffff+100 */
+  background: #d1d1ff; /* Old browsers */
+  background: -moz-linear-gradient(left,  #d1d1ff 0%, #00ffff 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #d1d1ff 0%,#00ffff 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #d1d1ff 0%,#00ffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1d1ff', endColorstr='#00ffff',GradientType=1 ); /* IE6-9 */
+
+
   font-family: $font2;
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.45;
   color: #67727A;
+  height: 100vh;
+  background-size: cover;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
 }
 
 h1, h2, h3, h4 {
@@ -41,19 +58,6 @@ small, .font_small {font-size: 0.707em;}
 
 * {
   box-sizing: border-box;
-}
-
-body {
-  height: 100vh;
-  background-image: url('../img/code.jpeg');
-  background-size: cover;
-  background-position: top left;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: space-between;
 }
 
 header {
