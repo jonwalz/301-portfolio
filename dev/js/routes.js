@@ -1,8 +1,10 @@
 page('/', function () {
-    $("#aboutMe").hide();
-    $("#contact").hide();
 
     Piece.fetchData(portfolioView.initIndexPage);
+    articleController.index();
+});
+
+page('/work', function(){
     articleController.index();
 });
 

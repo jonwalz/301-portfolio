@@ -3,8 +3,9 @@
 
 var portfolioView = {};
 
-
 portfolioView.initIndexPage = function () {
+    $("#aboutMe").hide();
+    $("#contact").hide();
   Piece.all.forEach(function(a) {
       $('#workTemplate').append(a.postIt());
   })
