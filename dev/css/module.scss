@@ -23,6 +23,17 @@ $background-color1: #F5F5F5;
   }
 }
 
+.description {
+  a {
+    margin-top: 1rem;
+  }
+
+  i {
+    font-size: 1.5rem;
+  }
+}
+
+
 #sectionWrapper {
   display: flex;
   justify-content: center;

@@ -3,9 +3,9 @@
     "title": "4-The-Rodentz",
     "date": "2016-08-20",
     "url": "https://4-the-rodentz.github.io/App/html/index.html",
-    "imgUrl": "./img/cookieStand.png",
-    "gitUrl": "https://github.com/jonwalz/theatreTimes",
-    "description": "A project created during Code Fellows Coursework."
+    "imgUrl": "./img/rodentz.png",
+    "gitUrl": "https://github.com/4-the-rodentz/App",
+    "description": "4theRodentz offers a fun animal tracking game."
   },
   {
     "title": "Cookie Stand",
