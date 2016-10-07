@@ -1,5 +1,4 @@
 page('/', function () {
-
     Piece.fetchData(portfolioView.initIndexPage);
     articleController.index();
 });
@@ -9,7 +8,6 @@ page('/work', function(){
 });
 
 page('/about', function () {
-
     aboutController.index();
 });
 

@@ -1,5 +1,13 @@
 [
   {
+    "title": "4-The-Rodentz",
+    "date": "2016-08-20",
+    "url": "https://4-the-rodentz.github.io/App/html/index.html",
+    "imgUrl": "./img/cookieStand.png",
+    "gitUrl": "https://github.com/jonwalz/theatreTimes",
+    "description": "A project created during Code Fellows Coursework."
+  },
+  {
     "title": "Cookie Stand",
     "date": "2015-09-20",
     "url": "https://github.com/jonwalz/theatreTimes",
