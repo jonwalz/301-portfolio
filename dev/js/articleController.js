@@ -3,8 +3,6 @@
 
     // DONE: Define a function that hides all main section elements, and then reveals just the #about section:
     articleController.index = function () {
-
-
         $('section > div').slideUp(300);
         $("#workTemplate")
             .delay(200)
