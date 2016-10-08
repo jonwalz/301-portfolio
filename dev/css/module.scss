@@ -24,15 +24,18 @@ $background-color1: #F5F5F5;
 }
 
 .description {
-  a {
-    margin-top: 1rem;
+  display: flex !important;
+  flex-direction: row !important;
+
+  > a {
+    align-self: center;
+    > i {
+      font-size: 2.5rem;
+      padding: 0 0.5rem;
+    }
   }
 
-  i {
-    font-size: 1.5rem;
-  }
 }
-
 
 #sectionWrapper {
   display: flex;
@@ -40,6 +43,7 @@ $background-color1: #F5F5F5;
   flex-direction: column;
   background-color: $background-color1;
   margin-bottom: 20px;
+  padding: 0.5rem;
   box-shadow: 6px 6px 5px rgba(55,55,55,0.6);
 
   h1 {
@@ -57,8 +61,8 @@ $background-color1: #F5F5F5;
   .dateTime {
     font-size: 0.7rem;
   }
-  div {
-    padding: 0.6rem 1.3rem;
+  > div {
+    padding: 0.37rem 1.3rem;
     display: flex;
     justify-content: center;
     align-items: center;

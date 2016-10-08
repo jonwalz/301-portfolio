@@ -19,7 +19,7 @@
                 </div>
                 <div class="description">
                     <p>{{description}}</p>
-                    <a href={{githubUrl}}><i class="fa fa-github-square" aria-hidden="true"></i></a>
+                    <a href={{gitUrl}}><i class="fa fa-github-square" aria-hidden="true"></i></a>
                 </div>
             </div>
             <div>
@@ -27,8 +27,26 @@
             </div>
 
         </div>
+    </script >
+    <script id="reposTemplate" type="text/x-handlebars-template">
+        <h1>Github Repos</h1>
+        <div id="reposSection">
+            <div>
+                {{#if description}}
+                    <p>Description: {{description}}</p>
+                {{/if}}
+                {{#if language}}
+                <p>Language: {{language}}</p>
+                {{/if}}
+                <p>Created: {{formatDate created_at}}</p>
+                <p>Last updated: {{formatDate updated_at}}</p>
+            </div>
+            <div class="description">
+                <p>{{description}}</p>
+                <a href={{gitUrl}}><i class="fa fa-github-square" aria-hidden="true"></i></a>
+            </div>
+        </div>
     </script>
-
 </head>
 
 <body>
