@@ -121,7 +121,6 @@ $background-color1: #F5F5F5;
     padding: 1.3rem 3rem;
   }
 
-
   #sectionWrapper {
     flex-direction: row;
     p {
@@ -129,10 +128,14 @@ $background-color1: #F5F5F5;
 
     }
   }
+
   #aboutMe {
     flex-direction: row;
     p {
       width: 50%;
     }
+  }
+  .description {
+    flex-direction: column !important;
   }
 }

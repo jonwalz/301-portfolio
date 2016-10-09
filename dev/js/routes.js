@@ -16,4 +16,8 @@ page('/contact', function(){
     contactController.index();
 });
 
+page('/github', function(){
+    repos.requestRepos(repoController.index);
+});
+
 page();

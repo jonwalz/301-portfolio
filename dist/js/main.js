@@ -1,1 +1,41 @@
-!function(t){function i(t){this.title=t.title,this.date=t.date,this.url=t.url,this.gitUrl=t.gitUrl,this.description=t.description,this.imgUrl=t.imgUrl}i.all=[],i.prototype.postIt=function(){var t=$("#template").html(),i=Handlebars.compile(t);return console.log("Handlebars view ran"),i(this)},i.loadAll=function(t){i.all=t.map(function(t){return new i(t)})},i.fetchData=function(t){$.getJSON("./data/portfolioData.json",function(l){i.loadAll(l),localStorage.portPieces=JSON.stringify(l),t()})},t.Piece=i}(window);
+(function (module) {
+
+function Piece(keys) {
+    // Title, Date, Url, Github url, Description, imgUrl
+    this.title = keys.title;
+    this.date = keys.date;
+    this.url = keys.url;
+    this.gitUrl = keys.gitUrl;
+    this.description = keys.description;
+    this.imgUrl = keys.imgUrl;
+}
+Piece.all = [];
+
+Piece.prototype.postIt = function(){ // This function compiles the object being called upon using Handlebars compile method
+
+    var newPiece = $('#template').html();
+
+    var compiledPost = Handlebars.compile(newPiece);
+    console.log("Handlebars view ran");
+    return compiledPost(this);
+
+};
+
+Piece.loadAll = function (rawData) { // This function sends each instance from rawData through the new Piece constructor and attaches the returned array to Piece.all
+    Piece.all = rawData.map(function(el){
+        return new Piece(el);
+    });
+};
+
+Piece.fetchData = function(callback) { //
+        $.getJSON('./data/portfolioData.json', function (rawData) {
+            Piece.loadAll(rawData);
+            localStorage.portPieces = JSON.stringify(rawData);
+
+            callback();
+    });
+};
+
+module.Piece = Piece;
+
+})(window);
