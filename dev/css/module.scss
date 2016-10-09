@@ -2,6 +2,7 @@ $font1: 'Ubuntu', sans-serif;
 $font2: 'Vollkorn', serif;
 
 $background-color1: #F5F5F5;
+
 #icon {
   display: inline-block;
   padding: 0 1em;
@@ -111,8 +112,27 @@ $background-color1: #F5F5F5;
   background-color: transparent;
   max-width: 90%;
 }
+#gitReposRendered {
+  background-color: transparent;
+  max-width: 90%;
+  h1 {
+    background-color: $background-color1;
+  }
+}
 
-
+.gitRepoCards {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: $background-color1;
+  margin-bottom: 20px;
+  padding: 0.5rem;
+  box-shadow: 6px 6px 5px rgba(55, 55, 55, 0.6);
+}
+#reposSection {
+  display: flex;
+  flex-direction: column;
+}
 @media screen and (min-width: 900px) {
   #icon {
     position: fixed;

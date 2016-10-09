@@ -13,7 +13,7 @@
     repoView.index = function() {
         ui();
 
-        $('#gitReposRendered ul').append(
+        $('#gitReposRendered .gitRepoCards').append(
             repos.with('name').map(render)
         );
     };

@@ -11,10 +11,5 @@ portfolioView.initIndexPage = function () {
   })
 };
 
-// $(document).ready(function(){ // These function calls initiate the views after the document has loaded
-//     // portfolioView.initialize();
-//     // portfolioView.navViews();
-// });
-
     module.portfolioView = portfolioView;
 })(window);
